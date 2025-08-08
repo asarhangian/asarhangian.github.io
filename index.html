@@ -3,32 +3,54 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Site is Live</title>
+  <title>My Site</title>
   <base href="/" />
   <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-    .wrap { max-width: 800px; margin: 48px auto; padding: 0 16px; }
-    h1 { font-size: 2rem; margin: 0 0 8px; }
-    p { line-height: 1.55; }
-    .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; margin: 24px 0; }
-    a { text-decoration: none; border-bottom: 1px solid #d1d5db; }
-    .ok { display:inline-block; background:#f0fdf4; color:#166534; border:1px solid #bbf7d0; padding:8px 12px; border-radius:8px; margin:8px 0;}
+    :root { --fg:#0f172a; --muted:#475569; --border:#e5e7eb; --bg:#ffffff; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--fg); background:var(--bg); }
+    a { color:inherit; text-decoration:none; border-bottom:1px solid #cbd5e1; }
+    header { position: sticky; top: 0; background:#fff; border-bottom:1px solid var(--border); }
+    .nav { max-width:960px; margin:0 auto; padding:14px 16px; display:flex; gap:16px; align-items:center; }
+    .nav a.logo { font-weight:700; border:none; }
+    .nav .spacer { flex:1; }
+    .nav a.link { padding:6px 10px; border:1px solid transparent; border-radius:8px; }
+    .nav a.link:hover { border-color:var(--border); }
+    .wrap { max-width:960px; margin:40px auto; padding:0 16px; }
+    h1 { font-size:2rem; margin:0 0 8px; }
+    p { line-height:1.6; color:var(--muted); }
+    .card { border:1px solid var(--border); border-radius:12px; padding:16px; margin:24px 0; }
+    .btn { display:inline-block; padding:10px 14px; border-radius:10px; border:1px solid var(--border); }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1>✅ GitHub Pages is working</h1>
-    <p class="ok">Open your site at: <strong>https://USERNAME.github.io/</strong> (no <code>index.html</code>, no trailing slash)</p>
+  <header>
+    <nav class="nav">
+      <a class="logo" href="/">My Site</a>
+      <div class="spacer"></div>
+      <a class="link" href="/">Home</a>
+      <a class="link" href="about.html">About</a>
+      <a class="link" href="mailto:you@example.com" title="Opens your email app">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1>✅ Your site is live</h1>
+    <p>Welcome! The top navigation has working links. Try the <a href="about.html">About</a> page.</p>
+
     <div class="card">
-      <h2>What next?</h2>
+      <h2>Edit this page</h2>
       <ol>
-        <li>Replace this text with your own HTML.</li>
-        <li>Keep the <code>&lt;base href="/" /&gt;</code> line.</li>
-        <li>If you land on <code>.../index.html/</code>, we auto-redirect you back.</li>
+        <li>In GitHub, open <code>index.html</code> → click <strong>Edit</strong>.</li>
+        <li>Change the logo text and content to whatever you want.</li>
+        <li>Replace the contact email: find <code>you@example.com</code> and put your email.</li>
       </ol>
+      <p><a class="btn" href="about.html">Go to About</a></p>
     </div>
-  </div>
+  </main>
+
   <script>
+    // Guard against visiting .../index.html/
     if (location.pathname.endsWith('index.html/')) {
       location.replace(location.pathname.replace('index.html/', '') + location.search + location.hash);
     }
