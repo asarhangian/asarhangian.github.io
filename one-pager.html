@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>One-Pager — Trucking Intelligence AI</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="/" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+  :root { --fg:#0f172a; --muted:#475569; --border:#e5e7eb; --bg:#ffffff; --accent:#0ea5e9; }
+  * { box-sizing: border-box; }
+  html,body { margin:0; padding:0; background:var(--bg); color:var(--fg); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+  a { color:inherit; text-decoration:none; border-bottom:1px solid #cbd5e1; }
+  .container { max-width:1060px; margin:0 auto; padding:0 16px; }
+  header { position:sticky; top:0; background:#fff; border-bottom:1px solid var(--border); z-index:10; }
+  .nav { display:flex; gap:16px; align-items:center; padding:14px 0; }
+  .logo { font-weight:800; letter-spacing:.2px; border:none; }
+  .spacer { flex:1; }
+  .link { padding:8px 12px; border:1px solid transparent; border-radius:10px; }
+  .link:hover { border-color:var(--border); }
+  .hero { padding:48px 0 24px; }
+  .h1 { font-size: clamp(28px, 4vw, 40px); line-height:1.2; margin:0 0 12px; }
+  .sub { color:var(--muted); font-size: clamp(16px, 2vw, 18px); }
+  .cta-row { display:flex; gap:12px; align-items:center; margin:20px 0 8px; flex-wrap:wrap; }
+  .btn { display:inline-block; padding:12px 16px; border-radius:12px; border:1px solid var(--border); }
+  .btn.primary { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap:16px; margin:24px 0; }
+  .card { border:1px solid var(--border); border-radius:14px; padding:16px; background:#fff; }
+  h2 { margin:12px 0 6px; font-size:22px; }
+  p { line-height:1.6; }
+  .muted { color:var(--muted); }
+  footer { border-top:1px solid var(--border); margin-top:40px; }
+  .foot { padding:20px 0; color:var(--muted); font-size:14px; }
+  .list { margin:0; padding-left:18px; }
+  .list li { margin:6px 0; }
+  .section { padding:18px 0; }
+  .kpis { display:grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap:12px; margin-top:12px; }
+  .kpi { border:1px solid var(--border); border-radius:12px; padding:12px; }
+  .kpi .num { font-weight:800; font-size:20px; }
+  .pill { display:inline-block; background:#eff6ff; color:#1d4ed8; padding:4px 10px; border-radius:999px; font-size:12px; border:1px solid #dbeafe; }
+  .print-note { font-size:12px; color:var(--muted); }
+  .tag { display:inline-block; padding:4px 8px; border:1px solid var(--border); border-radius:999px; font-size:12px; margin-right:6px; }
+</style>
+
+  <style>
+    @media print { header, footer, .print-note { display:none !important; } .container { max-width:none; } body { background:#fff; } }
+    .tight { max-width:780px; }
+  </style>
+</head>
+<body>
+  <header>
+  <div class="container nav">
+    <a class="logo" href="/">Trucking Intelligence AI</a>
+    <div class="spacer"></div>
+    <a class="link" href="/">Home</a>
+    <a class="link" href="use-cases.html">Use Cases</a>
+    <a class="link" href="pricing.html">Pricing</a>
+    <a class="link" href="projects.html">Projects</a>
+    <a class="link" href="demo.html">Demo</a>
+    <a class="link" href="about.html">About</a>
+    <a class="link" href="contact.html">Contact</a>
+  </div>
+</header>
+  <main class="container tight">
+    <section class="section">
+      <h1 class="h1">Trucking Intelligence AI</h1>
+      <p class="muted">AI Ops Console for Small Fleets — built by a second-generation trucking family</p>
+      <div class="kpis">
+        <div class="kpi"><div class="num">$200–$450</div><div class="muted">per truck / month typical savings</div></div>
+        <div class="kpi"><div class="num">≤14 days</div><div class="muted">time-to-value</div></div>
+        <div class="kpi"><div class="num">10 actions</div><div class="muted">delivered weekly</div></div>
+      </div>
+    </section>
+    <section class="grid">
+      <div class="card"><h2>⚡ Fuel & Route</h2><p>Lane targets and cheapest stops; simple changes, real dollars.</p></div>
+      <div class="card"><h2>🛠️ PM Risk</h2><p>Predict likely failures in 30–60 days; plan shop time and parts.</p></div>
+      <div class="card"><h2>🛡️ Compliance</h2><p>30/60/90-day tickler for licenses, IFTA, inspections, insurance.</p></div>
+      <div class="card"><h2>📦 Cash-Flow</h2><p>Clean packets for brokers/factoring; fewer rejections, faster pay.</p></div>
+    </section>
+    <section class="section">
+      <h2>How it works</h2>
+      <ol class="list">
+        <li>Upload last 8 weeks of fuel, ELD, repairs.</li>
+        <li>We normalize and detect savings & risks.</li>
+        <li>Weekly checklist with $-impact and owners.</li>
+      </ol>
+      <p><strong>Owner:</strong> Marcell Zamora • <a href="mailto:you@example.com">you@example.com</a></p>
+      <p><a class="btn primary" href="demo.html">Book a Free Ops Tune-Up</a></p>
+    </section>
+    <p class="muted print-note">Print this page (Ctrl/Cmd+P) to hand to prospects.</p>
+  </main>
+  <footer>
+  <div class="container foot">© Marcell Zamora • Trucking Intelligence AI • <a href="privacy.html">Privacy</a> • <a href="terms.html">Terms</a></div>
+</footer>
+</body>
+</html>
