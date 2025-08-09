@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://asarhangian.github.io/</loc>
-    <lastmod>2025-08-08T23:12:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://asarhangian.github.io/about.html</loc>
-    <lastmod>2025-08-08T23:12:20Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
+  <url><loc>https://asarhangian.github.io/</loc><lastmod>2025-08-09T00:26:13Z</lastmod></url>
+  <url><loc>https://asarhangian.github.io/use-cases.html</loc><lastmod>2025-08-09T00:26:13Z</lastmod></url>
+  <url><loc>https://asarhangian.github.io/pricing.html</loc><lastmod>2025-08-09T00:26:13Z</lastmod></url>
+  <url><loc>https://asarhangian.github.io/projects.html</loc><lastmod>2025-08-09T00:26:13Z</lastmod></url>
+  <url><loc>https://asarhangian.github.io/demo.html</loc><lastmod>2025-08-09T00:26:13Z</lastmod></url>
+  <url><loc>https://asarhangian.github.io/about.html</loc><lastmod>2025-08-09T00:26:13Z</lastmod></url>
+  <url><loc>https://asarhangian.github.io/contact.html</loc><lastmod>2025-08-09T00:26:13Z</lastmod></url>
+  <url><loc>https://asarhangian.github.io/one-pager.html</loc><lastmod>2025-08-09T00:26:13Z</lastmod></url>
+  <url><loc>https://asarhangian.github.io/terms.html</loc><lastmod>2025-08-09T00:26:13Z</lastmod></url>
+  <url><loc>https://asarhangian.github.io/privacy.html</loc><lastmod>2025-08-09T00:26:13Z</lastmod></url>
+  <url><loc>https://asarhangian.github.io/ca.html</loc><lastmod>2025-08-09T00:26:13Z</lastmod></url>
+  <url><loc>https://asarhangian.github.io/drayage.html</loc><lastmod>2025-08-09T00:26:13Z</lastmod></url>
 </urlset>
